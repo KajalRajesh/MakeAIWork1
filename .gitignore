@@ -20,3 +20,5 @@ log.txt
 scripts/shape/__pycache__
 practica/week1/.ipynb_checkpoints/
 practica/pics/.ipynb_checkpoints/mars.nasa-checkpoint.jpg
+practica/week1/*.ipynb_checkpoints
+scripts/__pycache__/random.cpython-310.pyc
