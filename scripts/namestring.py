@@ -1,5 +1,5 @@
 # strName = input('Enter a string: ')
-strName="motivation010"
+strName="motivation"
 
 # print(len(strName))
 # print('strName' + 'bye')
