@@ -1,1 +1,100 @@
-<mxfile host="app.diagrams.net" modified="2023-02-15T08:22:20.380Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.8.20" etag="NPSGBuPohl_rnhOekAs2" type="github"><diagram name="Page-1" id="_mGdT_LNLbTFTwaOr3P8">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-15T10:02:03.449Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="e6oOQ1YFKVsTBor2C9XL" version="20.8.20" type="github">
+  <diagram name="Page-1" id="_mGdT_LNLbTFTwaOr3P8">
+    <mxGraphModel dx="880" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-49" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-1" target="aHfbq7wYI1BnbsNvvDw2-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-50" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-1" target="aHfbq7wYI1BnbsNvvDw2-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-1" value="is it an integer" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="20" as="sourcePoint" />
+            <mxPoint x="60" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.417;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-8" target="aHfbq7wYI1BnbsNvvDw2-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-8" value="start the process&amp;nbsp;&lt;br&gt;to build&amp;nbsp; a diamond" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-9" target="aHfbq7wYI1BnbsNvvDw2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-9" value="input the height,h" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.417;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-11" target="aHfbq7wYI1BnbsNvvDw2-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-11" value="input the space as same as height, h =s" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-12" target="aHfbq7wYI1BnbsNvvDw2-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-12" value="increment the height by 1 (n)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-53" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-13" target="aHfbq7wYI1BnbsNvvDw2-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-58" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-13" target="aHfbq7wYI1BnbsNvvDw2-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-13" value="is the value i in between 1 and&amp;nbsp;&lt;br&gt;n, odd number?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="360" width="105" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-14" target="aHfbq7wYI1BnbsNvvDw2-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-14" value="print the upper half of the diamond,with the condition loop" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="580" width="100" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-55" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.338;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-43" target="aHfbq7wYI1BnbsNvvDw2-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-65" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="485" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="485" />
+              <mxPoint x="820" y="350" />
+              <mxPoint x="640" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-43" value="is the number ,j&amp;nbsp;&lt;br&gt;between (h-2) and 0&lt;br&gt;an odd number" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="420" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-44" target="aHfbq7wYI1BnbsNvvDw2-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-44" value="print the lower half of the diamond,with the condition loop" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="690" y="600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-45" value="stop" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aHfbq7wYI1BnbsNvvDw2-57" target="aHfbq7wYI1BnbsNvvDw2-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="340" />
+              <mxPoint x="518" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aHfbq7wYI1BnbsNvvDw2-57" value="increment i by 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="470" width="70" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
