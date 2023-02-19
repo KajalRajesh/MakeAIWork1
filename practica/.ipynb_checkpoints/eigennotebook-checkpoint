@@ -1,0 +1,421 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1b38a311-d953-4d05-ac44-a77933776514",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "                                            LIBRARIES - OS"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8d99319f-96b2-41cc-b730-f3ae570b6e7d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Python OS module provides the facility to establish the interaction between the user AND the operating system. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "908e8222-c404-4e4b-870b-f303910915de",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "TO KNOW THE OPERATING SYSTEM"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "698a057d-6bb8-4816-9555-83607a6d3e77",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "nt\n"
+     ]
+    }
+   ],
+   "source": [
+    "import os\n",
+    "print(os.name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b7d90a21-a3b3-42f7-a9ce-da688f1d5bb6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "TO GET THE CURRENT WORKING DIRECTORY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "4bfb24d0-f300-4f0a-88b9-f2580e6e9342",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'C:\\\\Users\\\\Lenovo\\\\MakeAIWork1\\\\practica\\\\week2'"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import os\n",
+    "os.getcwd()    # to get the current working directory\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "71f36a6f-58a5-461a-928a-ba28ec5b5d0e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "TO MAKE A NEW DIRECTORY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7fc26c05-dd62-4bf1-9357-01f913b9ce90",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "os.mkdir(\"C:\\\\MyPythonProject\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a234bf95-cbfb-425c-9ed8-00e6fed55ff2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "TO CHANGE THE CURRENT WORKING DIRECTORY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "d4974f4a-dea2-4de3-a2f2-8a99e15054b5",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'C:\\\\Users\\\\Lenovo\\\\MakeAIWork1\\\\practica\\\\week2'"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\n",
+    "os.chdir(\"C:\\\\Users\\Lenovo\\MakeAIWork1\\practica\\week2\") # changing current workign directory\n",
+    "os.getcwd()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "de92e742-64a4-4fe5-bda2-d1836573884e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "TO MOVE THE PARENT DIRECTORY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "24057a50-70c4-4b95-a9c9-e4b12d9879fb",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'C:\\\\'"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "os.chdir(\"C:\\\\MyPythonProject\")\n",
+    "os.getcwd()\n",
+    "os.chdir(\"..\")\n",
+    "os.getcwd()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3fe6fe4c-b817-4689-a16f-789ce1c28f80",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "TO REMOVE A DIRECTORY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "5a4b9ca2-9eb9-4ba3-9ccf-6da93303135e",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "FileNotFoundError",
+     "evalue": "[WinError 2] The system cannot find the file specified: 'C:\\\\MyPythonProject'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mFileNotFoundError\u001b[0m                         Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[19], line 2\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mos\u001b[39;00m\n\u001b[1;32m----> 2\u001b[0m \u001b[43mos\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mrmdir\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mC:\u001b[39;49m\u001b[38;5;130;43;01m\\\\\u001b[39;49;00m\u001b[38;5;124;43mMyPythonProject\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n",
+      "\u001b[1;31mFileNotFoundError\u001b[0m: [WinError 2] The system cannot find the file specified: 'C:\\\\MyPythonProject'"
+     ]
+    }
+   ],
+   "source": [
+    "import os\n",
+    "os.rmdir(\"C:\\\\MyPythonProject\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "481fbec0-3b4d-4a00-9b34-44f03aa9d824",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "YOU CANT CHANGE CWD ,SO FIRST CHANGE THE DIRECTORY AND THEN REMOVE"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "97ad73a1-3cc0-4bc2-b7d3-cef44b166603",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'C:\\\\MyPythonLibrary'"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import os\n",
+    "os.chdir(\"C:\\\\MyPythonLibrary\")\n",
+    "#PermissionError: [WinError 32] The process cannot access the file because it is being used by 'd:\\\\MyPythonProject'\n",
+    "os.getcwd()\n",
+    "#>>> os.rmdir(\"MyPythonProject\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "feb832c4-6230-4082-8b35-504bb72f8785",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "PermissionError",
+     "evalue": "[WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\MyPythonLibrary'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mPermissionError\u001b[0m                           Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[24], line 3\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mos\u001b[39;00m\n\u001b[1;32m----> 3\u001b[0m \u001b[43mos\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mrmdir\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mC:\u001b[39;49m\u001b[38;5;130;43;01m\\\\\u001b[39;49;00m\u001b[38;5;124;43mMyPythonLibrary\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\n\u001b[0;32m      4\u001b[0m \u001b[38;5;66;03m#PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: #'d:\\\\MyPythonProject'\u001b[39;00m\n\u001b[0;32m      5\u001b[0m \u001b[38;5;66;03m#>>> os.chdir(\"..\")\u001b[39;00m\n\u001b[0;32m      6\u001b[0m \u001b[38;5;66;03m#>>> os.rmdir(\"MyPythonProject\")\u001b[39;00m\n",
+      "\u001b[1;31mPermissionError\u001b[0m: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\MyPythonLibrary'"
+     ]
+    }
+   ],
+   "source": [
+    "import os\n",
+    "\n",
+    "os.rmdir(\"C:\\\\MyPythonLibrary\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "ac074a10-495a-4b04-b1ea-36f230a703a2",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "os.chdir(\"C:\\\\Users\\Lenovo\\MakeAIWork1\\practica\\week2\")\n",
+    "os.rmdir(\"C:\\\\MyPythonLibrary\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "880161d6-d573-43c5-810b-82a4159451fd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "TO LIST ALL THE FILES IN THE DIRECTORY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "dcdaa097-b07e-4808-946f-1907f535465a",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['.ipynb_checkpoints',\n",
+       " 'csv',\n",
+       " 'draw.io',\n",
+       " 'eigennotebook',\n",
+       " 'geo',\n",
+       " 'json',\n",
+       " 'pics',\n",
+       " 'pip',\n",
+       " 'week1',\n",
+       " 'week2']"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import os\n",
+    "os.listdir(\"C:\\\\Users\\Lenovo\\MakeAIWork1\\practica\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ab57e6db-3f1a-47c9-bedc-ca38cf03f728",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "TO CHECK IF THE FILE EXISTS IN THE PATH"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "b6311c26-8e10-4253-bb3a-67d64998d234",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "import os\n",
+    "result = os.path.exists(\"C:\\\\Users\\Lenovo\\MakeAIWork1\\practica\\week2\")\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "8228c455-da95-4dfb-8a55-ddae0b8483b6",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "FileNotFoundError",
+     "evalue": "[WinError 2] The system cannot find the file specified: 'aanmelding' -> 'registration'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mFileNotFoundError\u001b[0m                         Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[38], line 1\u001b[0m\n\u001b[1;32m----> 1\u001b[0m \u001b[43mos\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mrename\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43maanmelding\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m,\u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mregistration\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m)\u001b[49m\n",
+      "\u001b[1;31mFileNotFoundError\u001b[0m: [WinError 2] The system cannot find the file specified: 'aanmelding' -> 'registration'"
+     ]
+    }
+   ],
+   "source": [
+    "os.rename('aanmelden','registration')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cd05947c-1f31-4f46-b6a8-ca2136d11c1a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.10"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
