@@ -1,0 +1,24 @@
+Field name,Field definition,Note,Data type
+cc ,Country code. ,Country code as in table FloodPhenomena_countries,text(2)
+FloodPhenomenaID,Flood phenomena identification code.,"Unique code assigned to every flood phenomena unit. First two characters of the code are equal to country code, while 4-13 characters are equal to phenomena “StartDate” (as reported in FD, EM-DAT or DFO databases). If beginning of flood phenomena is not known, “StartDate” is replaced with “FloodEventCode” as reported in FD database. Used as primary key for this table.",text(80)
+Year,Year of flood phenomena occurrence.,Year of flood phenomena occurrence (time period 1980-2015).,single
+StartDate,Beginning of flood phenomena.,Attribute is equal to start date of the oldest flood event in flood phenomena group or to flood beginning as reported either in national deliveries or EM-DAT and DFO databases.,date
+EndDate,Flood phenomena end date.,Attribute is equal to end date of the youngest flood event in flood phenomena group or to flood end date as reported either in national deliveries or EM-DAT and DFO databases.,date
+Number_FE,Number of flood events in flood phenomena group,Count of all flood events (FD) within flood phenomena group.  If flood phenomena data source is EM-DAT or DFO the field is empty.,single
+Number_FL,Number of flood locations in flood phenomena gr,"Count of all flood locations (FD) within flood phenomena group. If flood phenomena data source is EM-DAT or DFO, the field is empty.",single
+EUUOMCODE,EU unit of management code.,List of EU units of management grouped in flood phenomena group. If flood phenomena data source is EM-DAT or DFO and have not been updated by national authorities the field is empty.,text(255)
+FP_Severity ,Flood phenomena severity.,"Assessment of flood phenomena magnitude considering the values on flood frequency, damage category, number of flood events within one flood phenomena and severity classes as reported in DFO database.",text(15)
+FP_Duration ,Flood phenomena duration.,"Duration expressed as day difference between flood phenomena “StartDate” and “EndDate”. If the Start and End date values are not reported, data on duration is empty.",single
+FP_Extension ,Flood phenomena extension.,"Flood phenomena extension assessed and reported by national authorities. Extension  codelist: local, regional, national, international",text(20)
+SourceOfFlooding (SourceOf,Source of flooding.,"Sources of flooding (FD) aggregated on flood phenomena. Flooding sources codelist: fluvial, pluvial, groundwater, sea water, artificial water-bearing infrstrastructure, other. If flood phenomena data source is EM-DAT or DFO the field is empty.",text(255)
+CharacteristicsOfFlooding,Characteristics of flooding.,"Characteristics of flooding (FD) aggregated on flood phenomena. Flood characteristics codelist: flash flood, snow melt flood, other rapid onset, medium onset flood, slow onset flood, debris flow, high velocity flow, deep flood, other.  If flood phenomena data source is EM-DAT or DFO the field is empty.",text(255)
+MechanismOfFlooding,Mechanism of flooding.,"Mechanisms of flooding (FD) aggregated on flood phenomena.  Flood mechanisms codelist: Natural exceedance, Defence exceedance, Defence or Infrastructural Failure, Blockage / Restriction, Other. If flood phenomena data source is EM-DAT or DFO the field is empty.",text(255)
+FrequencyCategory ,Flood phenomena return period.,"This field consist of aggregated FD, EM-DAT and DFO frequency and recurrence data. Frequency  codelist : Very Rare, Rare, Frequent. ",text(50)
+Area,Flood phenomena area.,Extent by the flood inundated land in km2.  Field value equals to sum of reported flood events areas within flood phenomena. (Area data for flood phenomena which contain more than one flood event is in some cases most probably underestimated as only values for some events grouped into the phenomenon are available.),decimal
+Source,Primary flood data source.,"Default (primary) flood data source. Available data sources: FD (Floods Directive), National Authorities, EM-DAT, DFO.",text(40)
+OtherSources,Secondary flood data sources.,List of secondary data sources (used to update “Fatalities” and “Degree_TotalDamage” in cases when they were not reported by Member States into FD database).,text(250)
+,,,
+,,,
+,,,
+,,,
+,,,
